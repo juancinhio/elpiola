@@ -26,3 +26,7 @@ def hora(request):
 	hora = datetime.now()
 	return HttpResponse(f"fecha y hora {hora}")
 
+def notas(request):
+	lista = [1,2,3,4,5,6,7,8,9]
+	contexto = {"lista": lista}
+	return render(request, "notas.html", contexto)
