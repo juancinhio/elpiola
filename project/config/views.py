@@ -30,3 +30,7 @@ def notas(request):
 	lista = [1,2,3,4,5,6,7,8,9]
 	contexto = {"lista": lista}
 	return render(request, "notas.html", contexto)
+
+def auto(request):
+	auto = {"auto":{"marca": "ford", "modelo": "taunus", "color": "rojo", "año": 1984}}
+	return render(request,"notas.html",auto)

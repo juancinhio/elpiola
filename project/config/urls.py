@@ -26,4 +26,5 @@ urlpatterns = [
     path("probando/",views.probando),
     path("hora/",views.hora),
     path("notas/",views.notas),
+    path("auto/",views.auto),
 ]
